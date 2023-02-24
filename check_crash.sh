@@ -5,7 +5,6 @@ SERVICES=(
   nginx
   apache2
   php7.3-fpm
-  tor
 )
 
 for service in "${SERVICES[@]}"
