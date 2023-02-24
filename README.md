@@ -17,4 +17,4 @@ sudo crontab -e
 Das Skript überprüft den Status von mehreren Diensten, darunter MySQL, Nginx, Apache2 und PHP-FPM. Sie können es an Ihre spezifischen Bedürfnisse anpassen, indem Sie die Dienste hinzufügen oder entfernen, die überprüft werden sollen.
 
 ## Lizenz
-Dieses Skript wird unter der MIT-Lizenz von Volkan Kücükbudak veröffentlicht. Sie können es frei verwenden, kopieren, ändern und verteilen. Es wird jedoch ohne Garantie oder Haftung zur Verfügung gestell
+Dieses Skript wird unter der MIT-Lizenz von Volkan Kücükbudak veröffentlicht. Sie können es frei verwenden, kopieren, ändern und verteilen. Es wird jedoch ohne Garantie oder Haftung zur Verfügung gestellt
