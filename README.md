@@ -1,4 +1,4 @@
-# Bash-Script zum Überwachen und Neustarten von Diensten
+# Deutsch: Bash-Script zum Überwachen und Neustarten von Diensten
 Dieses Bash-Script dient der Überwachung von Diensten auf einem Server und startet diese neu, falls sie nicht mehr laufen. Es ist vor allem dann nützlich, wenn wichtige Dienste wie Datenbanken oder Webserver ununterbrochen laufen müssen.
 
 ## Verwendung
