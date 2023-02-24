@@ -20,7 +20,7 @@ The script checks the status of multiple services, including MySQL, Nginx, Apach
 This script is released under the MIT license by Volkan Kücükbudak. You are free to use, copy, modify, and distribute it. However, it is provided without warranty or liability.
 
 
-# DE: Bash-Script zum Überwachen und Neustarten von Diensten
+## DE: Bash-Script zum Überwachen und Neustarten von Diensten
 Dieses Bash-Script dient der Überwachung von Diensten auf einem Server und startet diese neu, falls sie nicht mehr laufen. Es ist vor allem dann nützlich, wenn wichtige Dienste wie Datenbanken oder Webserver ununterbrochen laufen müssen.
 
 ## Verwendung
