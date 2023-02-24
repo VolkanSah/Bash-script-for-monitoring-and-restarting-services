@@ -4,7 +4,7 @@ SERVICES=(
   mysql
   nginx
   apache2
-  php7.3-fpm
+  php7.4-fpm
 )
 
 for service in "${SERVICES[@]}"
