@@ -1,21 +1,26 @@
-# Linux-service-auto-restart-example
-small script for restarting Linux Services
+Bash-Script zum Überwachen und Neustarten von Diensten
+Dieses Bash-Script dient der Überwachung von Diensten auf einem Server und startet diese neu, falls sie nicht mehr laufen. Es ist vor allem dann nützlich, wenn wichtige Dienste wie Datenbanken oder Webserver ununterbrochen laufen müssen.
 
+Verwendung
+Kopieren Sie den Inhalt der check_crash.sh-Datei in eine neue Datei auf Ihrem Server, zum Beispiel /opt/check_crash.sh.
 
-#!/bin/bash
+Machen Sie das Bash-Skript ausführbar:
 
-SERVICES=(
-  mysql
-  nginx
-  apache2
-  php7.3-fpm
-  tor
-)
+bash
+Copy code
+sudo chmod +x /opt/check_crash.sh
+Bearbeiten Sie die Crontab-Einträge:
 
-for service in "${SERVICES[@]}"
-do
-  if ! systemctl is-active --quiet "$service"; then
-    sudo systemctl restart "$service"
-    echo "Restarting $service service."
-  fi
-done
+bash
+Copy code
+sudo crontab -e
+Fügen Sie die folgende Zeile hinzu, um das Skript alle 5 Minuten auszuführen:
+
+bash
+Copy code
+*/5 * * * * /opt/check_crash.sh > /dev/null 2>&1
+Anpassung des Skripts
+Das Skript überprüft den Status von mehreren Diensten, darunter MySQL, Nginx, Apache2 und PHP-FPM. Sie können es an Ihre spezifischen Bedürfnisse anpassen, indem Sie die Dienste hinzufügen oder entfernen, die überprüft werden sollen.
+
+Lizenz
+Dieses Skript wird unter der MIT-Lizenz veröffentlicht. Sie können es frei verwenden, kopieren, ändern und verteilen. Es wird jedoch ohne Garantie oder Haftung zur Verfügung gestell
