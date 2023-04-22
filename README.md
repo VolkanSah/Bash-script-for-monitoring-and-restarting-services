@@ -22,6 +22,6 @@ sudo crontab -e
 ### Customizing the script
 The script checks the status of multiple services, including MySQL, Nginx, Apache2, and PHP-FPM. You can customize it to your specific needs by adding or removing the services to be checked.
 
-## License
-This script is released under the MIT license by Volkan Kücükbudak. You are free to use, copy, modify, and distribute it. However, it is provided without warranty or liability.
+## Credits
+S. Volkan Kücükbudak
 
